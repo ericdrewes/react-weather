@@ -8,8 +8,6 @@
 ehthumbs.db
 Thumbs.db
 
-#Exclude node_modules directory
+#Node excludes
 node_modules/
-
-#Exclude jsconfig
-jsconfig.json
+npm-debug.log
