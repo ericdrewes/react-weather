@@ -29,7 +29,7 @@ var Navbar = React.createClass({
           <form onSubmit={this.onSearch}>
             <ul className="menu">
               <li>
-                <input type="search" placeholder="Search for city" />
+                <input type="search" placeholder="Search by city" className="search-city" />
               </li>
               <li>
                 <input type="submit" className="button" value="Get Weather" />

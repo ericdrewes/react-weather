@@ -23,6 +23,7 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
+      applicationStyleSheet: 'app/styles/app.css',
       Main: 'app/components/Main.jsx',
       Navbar: 'app/components/Navbar.jsx',
       Weather: 'app/components/Weather.jsx',

@@ -1,0 +1,18 @@
+html {
+  position: relative;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  margin: 35px 0 35px 0;
+}
+
+.search-city {
+  box-shadow: none;
+}
