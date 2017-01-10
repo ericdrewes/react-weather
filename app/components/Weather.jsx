@@ -9,11 +9,28 @@ var Weather = React.createClass({
   getInitialState: function () {
     return {
       isLoading: false,
-      errorMessage: undefined
+      errorMessage: undefined,
+      location: undefined,
+      temp: undefined
+    }
+  },
+  componentDidMount: function () {
+    var {city} = this.props.location.query
+
+    if (city && city.length > 0) {
+      this.handleSearch(city)
+      window.location.hash = '#/'
+    }
+  },
+  componentWillReceiveProps: function (newProps) {
+    var {city} = newProps.location.query
+
+    if (city && city.length > 0) {
+      this.handleSearch(city)
+      window.location.hash = '#/'
     }
   },
   handleSearch: function (location) {
-    //TODO: Change self-use to function.prototype.bind
     var self = this;
 
     this.setState({
