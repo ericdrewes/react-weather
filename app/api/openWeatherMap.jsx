@@ -14,7 +14,7 @@ module.exports = {
         return res.data.main.temp
       }
     }, function (res) {
-      throw new Error(res);
+      throw new Error('Something went wrong. Please try again in a few seconds!');
     })
   }
 }
