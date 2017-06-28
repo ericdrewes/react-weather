@@ -1,5 +1,6 @@
 # React weather application
-A demo app, witch fetches from the openweathermap api, and displays the temperature.
+A demo app, witch fetches from the OpenWeatherMap API, and displays the temperature.
+A React.js application, that displays the temperature using the OpenWeatherMapAPI
 
 It was created as a parsonal project, to learn React.js
 
